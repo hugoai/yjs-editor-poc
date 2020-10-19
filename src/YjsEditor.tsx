@@ -17,16 +17,7 @@ interface ClientProps {
 }
 
 const Client: React.FC<ClientProps> = ({ id, name, slug, websocketEndpoint }) => {
-  const [value, setValue] = useState<Node[]>([
-    {
-      type: "paragraph",
-      children: [
-        {
-          text: "",
-        },
-      ],
-    },
-  ])
+  const [value, setValue] = useState<Node[]>([])
   const [isOnline, setOnlineState] = useState<boolean>(false)
 
   const editor = useMemo(() => {
