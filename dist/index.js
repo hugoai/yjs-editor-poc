@@ -201,16 +201,7 @@ var MarkButton = function (_a) {
 /* eslint-disable */
 var Client = function (_a) {
     var id = _a.id, name = _a.name, slug = _a.slug, websocketEndpoint = _a.websocketEndpoint;
-    var _b = React.useState([
-        {
-            type: "paragraph",
-            children: [
-                {
-                    text: "",
-                },
-            ],
-        },
-    ]), value = _b[0], setValue = _b[1];
+    var _b = React.useState([]), value = _b[0], setValue = _b[1];
     var _c = React.useState(false), isOnline = _c[0], setOnlineState = _c[1];
     var editor = React.useMemo(function () {
         var slateEditor = slateYjs.withYjs(slateReact.withReact(slateHistory.withHistory(slate.createEditor())));
